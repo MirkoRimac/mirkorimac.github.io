@@ -1,0 +1,78 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+hr {
+  height: 10px;
+  border: 0;
+  box-shadow: 0 10px 10px -10px #8c8c8c inset;
+}
+
+.header {
+  margin: 120px 0;
+}
+
+header > p {
+  color: grey;
+}
+
+header > .gitLink {
+  color: #333;
+}
+
+.section {
+  margin: 120px 0;
+}
+
+.main {
+  margin: 120px 0;
+}
+
+img {
+  width: 200px;
+  height: 250px;
+}
+
+.footer {
+  margin: 120px 0;
+}
+
+a {
+  font-style: none;
+}
+
+.fa-facebook {
+  color: #385185;
+  transition: 0.4s;
+}
+
+.fa-facebook:hover {
+  color: #385185;
+  opacity: 0.9;
+  transform: scale(1.2);
+}
+
+.fa-instagram {
+  color: #0095f6;
+  transition: 0.4s;
+}
+
+.fa-instagram:hover {
+  color: #0095f6;
+  opacity: 0.9;
+  transform: scale(1.2);
+}
+
+.fa-github {
+  color: #191d21;
+  transition: 0.4s;
+}
+
+.fa-github:hover {
+  color: #191d21;
+  opacity: 0.9;
+  transform: scale(1.2);
+}
