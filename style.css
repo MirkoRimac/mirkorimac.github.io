@@ -116,10 +116,3 @@ a {
   opacity: 0.9;
   transform: scale(1.2);
 }
-
-/* Media Queries */
-@media (max-width: 600px) {
-  html {
-    background: blue;
-  }
-}
