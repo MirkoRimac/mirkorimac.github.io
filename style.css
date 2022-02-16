@@ -45,6 +45,12 @@ hr {
   transform: translate(-50%, -50%);
 }
 
+.pb-img {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+}
+
 header > p {
   color: grey;
 }
@@ -54,13 +60,19 @@ header > .gitLink {
 }
 
 .section {
+  position: relative;
   height: 100%;
-  margin: 120px 0;
+}
+
+.experience-img {
+  height: 200px;
+  width: 200px;
 }
 
 .main {
-  height: 100%;
-  margin: 120px 0;
+  position: relative;
+  margin-bottom: 120px;
+  min-height: 100%;
 }
 
 img {
@@ -69,8 +81,8 @@ img {
 }
 
 .footer {
-  position: absolute;
-  margin: 120px 0;
+  margin-top: auto;
+  padding: 5px;
   background: #000;
   width: 100%;
 }
@@ -115,4 +127,19 @@ a {
   color: #191d21;
   opacity: 0.9;
   transform: scale(1.2);
+}
+
+/* Media Queries */
+@media only screen and (max-width: 768px) {
+  [class='col'] {
+    width: 50%;
+  }
+
+  [class='col-6'] {
+    width: 100%;
+  }
+
+  .social-media-icons > .fa {
+    width: 50%;
+  }
 }
