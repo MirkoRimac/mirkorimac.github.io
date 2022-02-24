@@ -144,15 +144,42 @@ a {
 
 /* Media Queries */
 @media only screen and (max-width: 768px) {
+  .main {
+    margin-top: 450px;
+  }
+
+  .experience-img {
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    text-align: center;
+  }
+
   [class='col'] {
-    width: 50%;
+    width: 100%;
   }
 
   [class='col-6'] {
     width: 100%;
   }
 
+  .projects {
+    width: 100%;
+  }
+
   .social-media-icons > .fa {
     width: 50%;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .projects {
+    width: 100%;
+  }
+
+  [class='col-6'] {
+    width: 100%;
+    margin-bottom: 50px;
   }
 }
