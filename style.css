@@ -76,8 +76,21 @@ header > .gitLink {
 }
 
 img {
-  width: 200px;
+  width: 400px;
   height: 250px;
+}
+
+.projects {
+  width: 400px;
+  height: 250px;
+  transition: 0.4s;
+}
+
+.projects:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  opacity: 0.9;
+  box-shadow: 5px 5px 5px 5px #000;
 }
 
 .footer {
