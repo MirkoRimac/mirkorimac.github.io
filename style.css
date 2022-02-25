@@ -11,6 +11,13 @@ body {
   font-family: 'Roboto Condensed', sans-serif;
 }
 
+a.anchor {
+  display: block;
+  position: relative;
+  top: -250px;
+  visibility: hidden;
+}
+
 .navbar-nav {
   margin-left: auto;
 }
@@ -62,6 +69,22 @@ header > .gitLink {
   color: #333;
 }
 
+.about-me {
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.about-me-text {
+  position: relative;
+  margin: 0 auto;
+  margin-top: 25%;
+  text-align: left;
+  width: 400px;
+  font-size: 1.2rem;
+  letter-spacing: 0.5px;
+}
+
 .section {
   position: relative;
   height: 100%;
@@ -69,6 +92,10 @@ header > .gitLink {
 
 h5 {
   font-weight: 700;
+}
+
+.experience-row {
+  margin-top: 7%;
 }
 
 .experience-img {
@@ -144,6 +171,28 @@ a {
 
 .fa-github:hover {
   color: #191d21;
+  opacity: 0.9;
+  transform: scale(1.2);
+}
+
+.fa-xing {
+  color: #0698a0;
+  transition: 0.4s;
+}
+
+.fa-xing:hover {
+  color: #0698a0;
+  opacity: 0.9;
+  transform: scale(1.2);
+}
+
+.fa-linkedin {
+  color: #0a66c2;
+  transition: 0.4s;
+}
+
+.fa-linkedin:hover {
+  color: #0a66c2;
   opacity: 0.9;
   transform: scale(1.2);
 }
