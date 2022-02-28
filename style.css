@@ -2,13 +2,26 @@
 
 html,
 body {
-  width: 100%;
+  width: 90%;
   height: 100%;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
   font-family: 'Roboto Condensed', sans-serif;
+}
+
+header,
+section,
+main {
+  box-shadow: 12px 0 15px -4px #ccc, -12px 0 8px -4px #ccc;
+  box-shadow: 0 9px 0px 0px white, 0 -9px 0px 0px white, 12px 0 15px -4px #ccc,
+    -12px 0 15px -4px #ccc;
+}
+
+.wrapper {
+  height: 100%;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 a.anchor {
@@ -28,6 +41,10 @@ a.anchor {
 
 .nav-item {
   padding: 10px;
+}
+
+.nav-item:active {
+  opacity: 0.8;
 }
 
 hr {
@@ -83,6 +100,7 @@ header > .gitLink {
   width: 400px;
   font-size: 1.2rem;
   letter-spacing: 0.5px;
+  transition: 0.4s;
 }
 
 .section {
@@ -105,11 +123,13 @@ h5 {
 
 .main {
   position: relative;
-  margin-bottom: 120px;
   min-height: 100%;
+  top: -55px;
+  margin-bottom: -55px;
 }
 
 .col-6 {
+  margin-top: 50px;
   margin-bottom: 100px;
 }
 
@@ -199,8 +219,13 @@ a {
 
 /* Media Queries */
 @media only screen and (max-width: 768px) {
+  body,
+  html {
+    width: 100%;
+  }
+
   .main {
-    margin-top: 450px;
+    margin-top: 100px;
   }
 
   .experience-img {
@@ -219,6 +244,10 @@ a {
     width: 100%;
   }
 
+  .section {
+    height: 50%;
+  }
+
   .projects {
     width: 100%;
   }
@@ -229,8 +258,25 @@ a {
 }
 
 @media only screen and (max-width: 1024px) {
+  body,
+  html {
+    width: 100%;
+  }
+
   .projects {
     width: 80%;
+  }
+
+  .about-me {
+    margin-bottom: 100px;
+  }
+
+  .about-me-text {
+    margin-top: 100px;
+  }
+
+  .section {
+    height: 70%;
   }
 
   [class='col-6'] {
