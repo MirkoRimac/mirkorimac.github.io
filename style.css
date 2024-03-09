@@ -186,6 +186,82 @@ header nav a:hover {
     box-shadow: 5px 5px 5px 5px #ccc;
 }
 
+.projekte {
+    position: relative;
+    margin-top: 10px;
+    border: 3px solid #59d0fb;
+    padding: 10px 20px;
+    background-color: black;
+    color: #59d0fb;
+    justify-content: flex-end;
+    letter-spacing: 3px;
+    font-weight: bolder;
+}
+
+.projekte a, a:link, a:visited, a:active {
+    color: #59d0fb;
+    text-decoration: none;
+}
+
+.projekte:hover {
+    border: 3px solid #f1f1f1;
+    cursor: pointer;
+    color: #f1f1f1;
+}
+
+.projekte-button {
+    margin: 5vw 0 5vw 0;
+}
+
+#wrapper {
+    margin-top: 3vw;
+}
+
+.grid-gallery a{
+    --size: 100px;
+    display: flexbox;
+    grid-template-columns: repeat(6, var(--size));
+    grid-auto-rows: var(--size);
+    gap: 5px;
+    place-items: start center;
+    margin-bottom: var(--size);
+}
+
+.grid-gallery a img {
+    width: calc(var(--size) * 2);
+    height: calc(var(--size) * 2);
+    object-fit: cover;
+    grid-column: auto / span 2;
+    border-radius: 5px;
+    clip-path: path("M90,10 C100,0 100,0 110,10 190,90 190,90 190,90 200,100 200,100 190,110 190,110 110,190 110,190 100,200 100,200 90,190 90,190 10,110 10,110 0,100 0,100 10,90Z"); 
+}
+
+.grid-gallery a img:nth-child(5n - 1) { 
+    grid-column: 2 / span 2 
+}
+
+.grid-gallery a:has(img:hover) a img:not(:hover) {
+    filter: brightness(0.5) contrast(0.5);
+}
+
+.grid-gallery a img {
+    /* ... */
+    transition: clip-path 0.25s, filter 0.75s;
+  }
+  
+.grid-gallery a img:hover {
+    clip-path: path("M0,0 C0,0 200,0 200,0 200,0 200,100 200,100 200,100 200,200 200,200 200,200 100,200 100,200 100,200 100,200 0,200 0,200 0,100 0,100 0,100 0,100 0,100Z");
+    transition: clip-path 0.25s, filter 0.25s;
+    z-index: 1;
+}
+
+.grid-gallery a:focus {
+    outline: 1px dashed black;
+    outline-offset: -5px;
+}
+  
+  
+
 /*footer {
     margin-top: auto;
     text-align: center;
@@ -200,6 +276,9 @@ header nav a:hover {
     width: 100%;
 }
 */
+
+/*Test*/
+
 @font-face {
     font-family: "Custom-Font";
     src: url(/fonts/swansea-font/Swansea-q3pd.ttf);
@@ -302,5 +381,19 @@ header nav a:hover {
 
     .col-12 {
         margin: 5vw, 0, 5vw, 0;
+    }
+
+    .projekte-button {
+        margin: 15vw 0 25vw 0;
+    }
+
+    section h3{
+        font-size: 7vw;
+        margin-top: 15vw;
+    }
+
+    footer h3{
+        font-size: 7vw;
+        margin-top: 15vw;
     }
 }
