@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -28,266 +28,92 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="icon" type="image/x-icon" href="./img/logo.png" />
     <title>Mirko Rimac</title>
-  </head>
-  <body>
-    <!-- Navigation Bar -->
-    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#"
-          ><img src="./img/logo.png" class="logo" alt="MMM Logo"
-        /></a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#about">About Me</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#experience"
-                >Experience with</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#projects">Projects</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#connect">Let's Connect</a>
-            </li>
-          </ul>
-        </div>
-      </div>
+</head>
+<body>
+    <header>
+    <nav>
+        <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="/projekte.html">PROJEKTE</a></li>
+            <li><a href="#" onclick="sendEmail()">KONTAKT</a></li>
+        </ul>
     </nav>
-    <!-- Header -->
-    <header class="header">
-      <div class="myname">
-        <img src="./img/Profilbild2021.jpg" class="pb-img easeload" alt="" />
-        <h1 class="fw-bold">Mirko Rimac</h1>
-        <p>mirkoscono@gmail.com</p>
-        <p class="gitLink">
-          Portfolio Site:
-          <a
-            href="https://github.com/MirkoRimac"
-            target="_blank"
-            rel="noopener noreferrer"
-            >GitHub Account</a
-          >
-        </p>
-      </div>
-    </header>
-    <!-- About -->
+    </header>   
 
-    <section class="about-me text-center">
-      <div class="container">
-        <h3 class="fw-bold anchor" id="about">About</h3>
-        <div class="row about-me-container">
-          <div class="col col-text">
-            <p class="about-me-text">
-              I am a hobbyist Web Developer with a working profiency in HTML,
-              CSS and JavaScript. I have a solid understanding of Bootstrap,
-              SASS and Git. I am currently expanding my skill set by studying
-              JavaScript and React.
-            </p>
-          </div>
-          <div class="col col-text">
-            <p class="about-me-text">
-              My goal is to take the step from an hobbyist to a professional
-              with a company where i can learn, grow and showcase my skills. I'm
-              sure that with my current experience I am an excellent choice for
-              an entry level junior developer.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Experience With -->
-    <section class="section text-center">
-      <div class="container">
-        <h3 class="fw-bold anchor" id="experience">Experience With</h3>
-        <div class="row experience-row">
-          <div class="col-4">
-            <img src="./img/image_part_001.jpg" class="experience-img" alt="" />
-            <h5>HTML5</h5>
-          </div>
-          <div class="col-4">
-            <img src="./img/image_part_002.jpg" class="experience-img" alt="" />
-            <h5>CSS3</h5>
-          </div>
-          <div class="col-4">
-            <img src="./img/image_part_003.jpg" class="experience-img" alt="" />
-            <h5>JavaScript</h5>
-          </div>
-          <div class="col-4">
-            <img src="./img/react.png" alt="" class="experience-img" />
-            <h5>React.js</h5>
-          </div>
-          <div class="col-4">
-            <img src="./img/bootstrap_logo.png" alt="" class="experience-img" />
-            <h5>Bootstrap</h5>
-          </div>
-          <div class="col-4">
-            <img
-              src="./img/wordpress_PNG74.png"
-              class="wp-logo experience-img"
-              alt=""
-            />
-            <h5>Wordpress</h5>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Projects -->
-    <main class="main text-center">
-      <div class="container">
-        <h3 class="fw-bold" id="projects">Projects</h3>
-
-        <div class="row">
-          <div class="col-12">
-            <h1>Netflix Clone</h1>
-            <p>
-              I build a Netflix Clone with React.js using API's to load current
-              movies
-            </p>
-            <a
-              href="https://mirkorimac.github.io/netflix-clone/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img class="projects" src="./img/netflix.png" alt="" />
-            </a>
-          </div>
-          <div class="col-12">
-            <h1>Guess my Number</h1>
-            <p>A simple and fun guess my number game build with DOM</p>
-            <a
-              href="https://mirkorimac.github.io/guess-my-number/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img class="projects" src="./img/guess_my_number.png" alt="" />
-            </a>
-          </div>
-          <div class="col-12">
-            <h1>Memory Game</h1>
-            <p>Simple and fun memory game with 3D effect</p>
-            <a
-              href="https://mirkorimac.github.io/memory-game/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img class="projects" src="./img/memory_game.png" alt="" />
-            </a>
-          </div>
-          <div class="col-12">
-            <h1>Complete Bootstrap Website</h1>
-            <p>Complete Website built entirely with Bootstrap</p>
-            <a
-              href="https://mirkorimac.github.io/complete-bootstrap-website/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img class="projects" src="./img/bootstrap_site.png" alt="" />
-            </a>
-          </div>
-          <div class="col-12">
-            <h1>Sluralpright</h1>
-            <p>Pluralsight clone build with bootstrap</p>
-            <a
-              href="https://mirkorimac.github.io/sluralpright/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img class="projects" src="./img/sluralpright.png" alt="" />
-            </a>
-          </div>
-          <div class="col-12">
-            <h1>Acme Web Design</h1>
-            <p>Complete website for an fictive web design company</p>
-            <a
-              href="https://mirkorimac.github.io/acme-web-design/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img class="projects" src="./img/acme_company.png" alt="" />
-            </a>
-          </div>
-          <div class="col-12">
-            <h1>Responsive Login</h1>
-            <p>Responsive login landing page build with bootstrap</p>
-            <a
-              href="https://mirkorimac.github.io/responsive-login/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img class="projects" src="./img/login_site.png" alt="" />
-            </a>
-          </div>
-          <div class="col-12">
-            <h1>Acme Photography</h1>
-            <p>Mobile website build with bootstrap</p>
-            <a
-              href="https://mirkorimac.github.io/acme-photography/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img class="projects" src="./img/acme_photography.png" alt="" />
-            </a>
-          </div>
-        </div>
-      </div>
+    <main class="div">
+        <section class="profil">
+            <img src="Profilbild.png" alt="Profilbild">
+            <div class="profil-text">
+                <h2>Mirko Rimac</h2>
+                <h1>IT-Enthusiast</h1>
+                <p>Derzeit absolviere ich eine Umschulung zum Fachinformatiker für Systemintegration beim Bildungsinstitut GFN GmbH in Frankfurt am Main.
+                      Meine Leidenschaft für Informationstechnologie begleitet mich nicht nur in meinem Beruf, sondern auch in meiner Freizeit.
+                        In meiner Freizeit beschäftige ich mich gerne mit Webentwicklung und dem Experimentieren mit Netzwerken.
+                        Zudem informiere ich mich regelmäßig über Themen der IT-Sicherheit.</p>
+                 <a class="download" href="/Bewerbungsunterlagen - Praktikum IT-Systemintegration - Mirko Rimac.pdf" download>DOWNLOAD CV</a>
+            </div>
+        </section>
     </main>
 
+    <!-- Experience With -->
+    <section class="container-fluid text-center text-center">
+        <div class="footer">
+          <h3 class="connect-text fw-bold" id="connect">Experiences</h3>
+          <hr />
+          <div class="social-media-icons">
+            <a><img class="logos" src="/img/HTML.png" alt=""></a>
+            <a><img class="logos" src="/img/CSS3.png" alt=""></a>
+            <a><img class="logos" src="/img/JavaScript.png" alt=""></a>
+            <a><img class="logos" src="/img/react.png" alt=""></a>
+            <a><img class="logos" src="/img/bootstrap_logo.png" alt=""></a>
+            <a><img class="logos" src="/img/wordpress_PNG74.png" alt=""></a>
+            <a><img class="logos" src="/img/Linux.png" alt=""></a>
+          </div>
+        </div>
+    </section>
+
+    
     <!-- Footer -->
     <footer class="container-fluid text-center text-center">
-      <div class="footer">
-        <h3 class="connect-text fw-bold" id="connect">Let's Connect</h3>
-        <hr />
-        <div class="social-media-icons">
-          <a
-            class="fa fa-facebook fa-7x text-decoration-none m-5"
-            href="https://www.facebook.com/profile.php?id=100070008428188"
-            target="_blank"
-            rel="noopener noreferrer"
-          ></a>
-          <a
-            class="fa fa-instagram fa-7x text-decoration-none m-5"
-            href="https://www.instagram.com/mirko.rimac98/"
-            target="_blank"
-            rel="noopener noreferrer"
-          ></a>
-          <a
-            class="fa fa-github fa-7x text-decoration-none m-5"
-            href="https://github.com/MirkoRimac"
-            target="_blank"
-            rel="noopener noreferrer"
-          ></a>
-          <a
-            class="fa fa-xing fa-7x text-decoration-none m-5"
-            href="https://www.xing.com/profile/Mirko_Rimac3/cv"
-            target="_blank"
-            rel="noopener noreferrer"
-          ></a>
-          <a
-            class="fa fa-linkedin fa-7x text-decoration-none m-5"
-            href="https://www.linkedin.com/in/mirko-rimac-160019148/"
-            target="_blank"
-            rel="noopener noreferrer"
-          ></a>
+        <div class="footer">
+          <h3 class="connect-text fw-bold" id="connect">Let's Connect</h3>
+          <hr />
+          <div class="social-media-icons">
+            <a
+              class="fa fa-github fa-7x text-decoration-none m-5"
+              href="https://github.com/MirkoRimac"
+              target="_blank"
+              rel="noopener noreferrer"
+            ></a>
+            <a
+              class="fa fa-xing fa-7x text-decoration-none m-5"
+              href="https://www.xing.com/profile/Mirko_Rimac3/cv"
+              target="_blank"
+              rel="noopener noreferrer"
+            ></a>
+            <a
+              class="fa fa-linkedin fa-7x text-decoration-none m-5"
+              href="https://www.linkedin.com/in/mirko-rimac-880b9125b/"
+              target="_blank"
+              rel="noopener noreferrer"
+            ></a>
+            <a
+              class="fa fa-envelope fa-7x text-decoration-none m-5"
+              href="mailto:mirkorimac98@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            ></a>
+          </div>
         </div>
-        <p>&copy;2022 <span>Mirko Rimac.</span> All rights reserved</p>
-      </div>
-    </footer>
-    <script src="main.js"></script>
-  </body>
+      </footer>
+
+    <footer>&copy; 2024 Mirko Rimac. All rights reserved</footer>
+
+    <script>
+        function sendEmail() 
+        {
+            window.location = "mailto:mirkorimac98@gmail.com";
+        }
+        </script>
+</body>
 </html>
