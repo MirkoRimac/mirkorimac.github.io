@@ -262,6 +262,7 @@ header nav a:hover {
     .profil-text {
         overflow: visible;
         margin-left: 0;
+        margin-top: 10px;
     }
     .profil img {
         width: 300px; /* Reduce image width on smaller screens */
@@ -281,8 +282,25 @@ header nav a:hover {
 
     .profil {
         display: flex;
-        flex-direction: column;
+        flex-direction:column;
         align-items: center;
         text-align: center; 
+    }
+
+    #profilbild {
+        margin-left: 13vw;
+        margin-bottom: 5vw;
+    }
+
+    .download {
+        padding: 20px;
+    }
+
+    .logos {
+        margin: 10vw 0 10vw 0;
+    }
+
+    .col-12 {
+        margin: 5vw, 0, 5vw, 0;
     }
 }
